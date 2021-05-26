@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Soldado Ditadura/Soldado Ditadura.tres" type="Texture" id=1]
+[ext_resource path="res://Soldado Ditadura/Soldado Ditadura(1).tres" type="Texture" id=2]
+[ext_resource path="res://Soldado Ditadura/Soldado Ditadura(2).tres" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Soldado batendo",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+height = 14.0
+
+[node name="Soldado ditadura" type="StaticBody2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Soldado batendo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, 0 )
+shape = SubResource( 2 )
