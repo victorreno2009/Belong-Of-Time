@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/plane.ogg-6e2cd5406bf3e49a2e81a4bdd978087e.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/plane.ogg"
+dest_files=[ "res://.import/plane.ogg-6e2cd5406bf3e49a2e81a4bdd978087e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

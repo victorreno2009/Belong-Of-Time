@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/explode.ogg-10f8b89ce288cf682ae68bc5c28b8e65.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/explode.ogg"
+dest_files=[ "res://.import/explode.ogg-10f8b89ce288cf682ae68bc5c28b8e65.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

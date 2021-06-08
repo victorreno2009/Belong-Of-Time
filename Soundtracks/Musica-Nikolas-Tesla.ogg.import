@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Musica-Nikolas-Tesla.ogg-0ca4c74a2823fe274adb57cd56ff6a75.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/Musica-Nikolas-Tesla.ogg"
+dest_files=[ "res://.import/Musica-Nikolas-Tesla.ogg-0ca4c74a2823fe274adb57cd56ff6a75.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

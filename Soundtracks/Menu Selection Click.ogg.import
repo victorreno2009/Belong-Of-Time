@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Menu Selection Click.ogg-6b550e6f5011d482b17212fd7977e785.sample"
+
+[deps]
+
+source_file="res://Soundtracks/Menu Selection Click.ogg"
+dest_files=[ "res://.import/Menu Selection Click.ogg-6b550e6f5011d482b17212fd7977e785.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
