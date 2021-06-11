@@ -19,6 +19,10 @@ config/name="Belong Of Time"
 run/main_scene="res://Cenas/Mapa nikolas tesla.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/height=680
+
 [input]
 
 Up={
