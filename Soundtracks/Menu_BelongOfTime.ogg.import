@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Menu_BelongOfTime.ogg-bb3437a10d473cc0cbfe2531ecb08263.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/Menu_BelongOfTime.ogg"
+dest_files=[ "res://.import/Menu_BelongOfTime.ogg-bb3437a10d473cc0cbfe2531ecb08263.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

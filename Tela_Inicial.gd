@@ -1,0 +1,14 @@
+extends Control
+
+onready var som = $somButton
+
+func _on_Button_Start_pressed():
+	som.play()
+	yield(get_tree().create_timer(1), "timeout")
+	get_tree().change_scene("res://Prólogo.tscn")
+
+
+func _on_Button_Quit_pressed():
+	som.play()
+	yield(get_tree().create_timer(1), "timeout")
+	get_tree().quit()

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Full of memories.ogg-012ab9461c85120d4d3169b977cfdfb4.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/Full of memories.ogg"
+dest_files=[ "res://.import/Full of memories.ogg-012ab9461c85120d4d3169b977cfdfb4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

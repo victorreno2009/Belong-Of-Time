@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/PortalBelong.jpg" type="Texture" id=1]
+[ext_resource path="res://Arial Negrito.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 22
+font_data = ExtResource( 2 )
+
+[node name="Final_Tesla1" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PortalBelong" type="Sprite" parent="."]
+position = Vector2( 539.753, 321.488 )
+scale = Vector2( 2.42062, 1 )
+texture = ExtResource( 1 )
+offset = Vector2( 71.5938, 0 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = -4.6
+anchor_top = 3.575
+anchor_right = 41.3
+anchor_bottom = 6.2
+margin_left = 468.055
+margin_top = 105.352
+margin_right = -522.945
+margin_bottom = 165.352
+custom_fonts/font = SubResource( 1 )
+text = "Com Victor ajudando no projeto da bobina de Tesla, o projeto se deu como concluído e Tesla revolucionou a história da energia tendo o seu nome conhecido em várias gerações.  Tesla nunca falou abertamente quem o ajudou porque nunca mais encontrou Victor, e se questiona se aquela história contada por ele era realmente verdadeira..."
+align = 3
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

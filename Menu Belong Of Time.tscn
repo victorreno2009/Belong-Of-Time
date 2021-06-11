@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/Menu Belong Of Time.jpg" type="Texture" id=1]
+
+[node name="Menu Belong Of Time" type="Sprite"]
+position = Vector2( 684.169, 390.748 )
+scale = Vector2( 3.16161, 1.74791 )
+texture = ExtResource( 1 )
