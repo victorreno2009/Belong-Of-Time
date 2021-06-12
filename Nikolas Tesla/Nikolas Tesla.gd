@@ -28,14 +28,14 @@ func _on_Area2D_body_exited(body):
 
 func escolha_boa():
 	som.play()
-	get_tree().call_group("Final1", "Tesla1")
+	get_tree().call_group("Tesla2", "Final1")
 	$Label.text = "Você apoiou uma causa nobre, meu jovem"
 	yield(get_tree().create_timer(3), "timeout")
 	$Label.text = ""
 
 func escolha_ruim():
 	som.play()
-	get_tree().call_group("Final2", "Tesla2")
+	get_tree().call_group("Tesla1", "Final2")
 	$Label.text = "Socorro!"
 	yield(get_tree().create_timer(3), "timeout")
 	$Label.text = ""
