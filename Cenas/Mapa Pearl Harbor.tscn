@@ -1,0 +1,325 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/room.png" type="Texture" id=1]
+[ext_resource path="res://assets/enfermary room.png" type="Texture" id=2]
+[ext_resource path="res://assets/waiting room.png" type="Texture" id=3]
+[ext_resource path="res://Fogo/fogo2.tres" type="Texture" id=4]
+[ext_resource path="res://Fogo/fogo1.tres" type="Texture" id=5]
+[ext_resource path="res://Fogo/fogo3.tres" type="Texture" id=6]
+[ext_resource path="res://Juvenal.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Fogo/fogo4.tres" type="Texture" id=8]
+
+[sub_resource type="TileSet" id=1]
+0/name = "enfermary room.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 8, 18, 518, 518 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "waiting room.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 334, 15, 584, 892 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "waiting room.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 334, 11, 582, 104 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "waiting room.png 3"
+3/texture = ExtResource( 3 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 1287, 399, 36, 125 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "waiting room.png 4"
+4/texture = ExtResource( 3 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 908, 652, 16, 20 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "waiting room.png 5"
+5/texture = ExtResource( 3 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 326, 844, 597, 62 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "waiting room.png 6"
+6/texture = ExtResource( 3 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 324, 11, 597, 143 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "unico",
+"speed": 20.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 196622, -1610612731, 0, 196623, -1610612735, 0 )
+
+[node name="room" type="Sprite" parent="."]
+position = Vector2( 493.983, 494.254 )
+texture = ExtResource( 1 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 917509, 0, 0 )
+
+[node name="Fogos" type="Node2D" parent="."]
+
+[node name="Fogo" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 48.6735, 466.617 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 2
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo2" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 65.6633, 486.439 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 1
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo3" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 48.6735, 534.576 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo4" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 494.182, 517.586 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 3
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo5" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 449.82, 495.877 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 3
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo6" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 904.767, 231.593 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 3
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo7" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 693.34, 105.113 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 2
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo8" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 374.31, 101.338 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 2
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo9" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 355.433, 282.562 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 1
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo10" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 1225.93, 344.401 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo11" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 1126.71, 726.167 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo12" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 1128.39, 272.083 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 3
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo13" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 1558.93, 694.214 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 2
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo14" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 436.971, 1009.18 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 3
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo15" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 634.031, 1074.86 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 2
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo16" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 718.788, 1358.8 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+frame = 1
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo17" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 780.237, 1337.61 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Fogo18" type="AnimatedSprite" parent="Fogos"]
+position = Vector2( 392.474, 1346.09 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "unico"
+playing = true
+offset = Vector2( -6.9976, -22.4351 )
+
+[node name="Juvenal" parent="." instance=ExtResource( 7 )]
+position = Vector2( 441.196, 309.194 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Camera2D" type="Camera2D" parent="Juvenal"]
+scale = Vector2( 1, 1 )
+current = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 31.9794, 235.188, 33.7171, 415.373, 71.0926, 450.079, 79.1016, 484.785, 52.4048, 538.178, 31.0474, 548.857, 28.3777, 733.065, 233.943, 938.63, 428.83, 930.621, 444.848, 935.96, 447.518, 1024.06, 428.83, 1042.75, 428.83, 1093.47, 331.488, 1100.3, 331.488, 1129.27, 424.722, 1136.83, 427.242, 1204.87, 330.228, 1212.43, 331.138, 1317.28, 343.03, 1331.55, 368.003, 1283.99, 407.247, 1288.74, 417.95, 1333.93, 400.112, 1363.66, 398.922, 1399.34, 824.659, 1399.34, 824.659, 1366.04, 800.874, 1343.45, 712.873, 1385.07, 679.575, 1375.55, 674.818, 1305.39, 724.765, 1268.53, 678.386, 1222.15, 674.818, 1210.25, 586.817, 1199.55, 583.25, 1135.33, 677.197, 1124.63, 677.197, 1083.01, 589.196, 1087.77, 582.06, 1010.47, 558.276, 1008.09, 558.328, 932.219, 745.641, 938.569, 963.161, 721.274, 963.161, 540.255, 987, 535, 987, 543, 974, 547, 973, 726, 1081, 725, 1109, 651, 1142, 650, 1140, 732, 1220, 734, 1251, 755, 1497, 755, 1523.55, 688.219, 1527.12, 618.729, 1557.41, 611.602, 1569.88, 574.184, 1564.53, 374.623, 1507.52, 219.607, 1494.5, 207, 1253, 206, 1222, 231, 1143, 229, 1139, 293, 1086, 285, 1086, 239, 974, 240, 972, 366, 987, 365, 988, 439, 956, 440, 956, 310, 900.535, 255.024, 867.572, 240.041, 867.572, 222.061, 720.738, 78.2235, 705.755, 135.159, 645.823, 123.173, 648.819, 72.2303, 382.121, 66.237, 394.107, 120.176, 337.171, 120.176, 337.171, 69.2336, 193.334, 78.2235, 39.4756, 225.35, -99.1808, 226.33, -99.1808, -134.076, 1935.12, -131.407, 1940.28, 1729.03, -158.593, 1708.85, -145.245, 238.235 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 255.737, 348.648, 242.523, 382.627, 189.666, 363.75, 153.798, 329.77, 138.697, 280.689, 150.023, 235.383, 200.992, 197.628, 244.41, 186.301, 253.849, 203.291, 278.39, 203.291, 287.829, 188.189, 318.033, 197.628, 353.9, 212.73, 374.665, 239.158, 387.879, 267.475, 385.992, 303.342, 370.89, 335.434, 336.91, 359.974, 297.267, 376.964, 284.053, 350.535 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 415.305, 0 )
+polygon = PoolVector2Array( 255.737, 348.648, 242.523, 382.627, 189.666, 363.75, 153.798, 329.77, 138.697, 280.689, 150.023, 235.383, 200.992, 197.628, 244.41, 186.301, 253.849, 203.291, 278.39, 203.291, 287.829, 188.189, 318.033, 197.628, 353.9, 212.73, 374.665, 239.158, 387.879, 267.475, 385.992, 303.342, 370.89, 335.434, 336.91, 359.974, 297.267, 376.964, 284.053, 350.535 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 211.428, 220.867 )
+polygon = PoolVector2Array( 255.737, 348.648, 242.523, 382.627, 189.666, 363.75, 153.798, 329.77, 138.697, 280.689, 150.023, 235.383, 200.992, 197.628, 244.41, 186.301, 253.849, 203.291, 278.39, 203.291, 287.829, 188.189, 318.033, 197.628, 353.9, 212.73, 374.665, 239.158, 387.879, 267.475, 385.992, 303.342, 370.89, 335.434, 336.91, 359.974, 297.267, 376.964, 284.053, 350.535 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 413.471, 436.379 )
+polygon = PoolVector2Array( 255.737, 348.648, 242.523, 382.627, 189.666, 363.75, 153.798, 329.77, 138.697, 280.689, 150.023, 235.383, 200.992, 197.628, 244.41, 186.301, 253.849, 203.291, 278.39, 203.291, 287.829, 188.189, 318.033, 197.628, 353.9, 212.73, 374.665, 239.158, 387.879, 267.475, 385.992, 303.342, 370.89, 335.434, 336.91, 359.974, 297.267, 376.964, 284.053, 350.535 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 0.405029, 434.134 )
+polygon = PoolVector2Array( 255.737, 348.648, 242.523, 382.627, 189.666, 363.75, 153.798, 329.77, 138.697, 280.689, 150.023, 235.383, 200.992, 197.628, 244.41, 186.301, 253.849, 203.291, 278.39, 203.291, 287.829, 188.189, 318.033, 197.628, 353.9, 212.73, 374.665, 239.158, 387.879, 267.475, 385.992, 303.342, 370.89, 335.434, 336.91, 359.974, 297.267, 376.964, 284.053, 350.535 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex"
+path="res://.import/enfermary room.png-05fce2dab4b9d3ddac95f2e03f2f7099.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/praca.png"
-dest_files=[ "res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex" ]
+source_file="res://assets/enfermary room.png"
+dest_files=[ "res://.import/enfermary room.png-05fce2dab4b9d3ddac95f2e03f2f7099.stex" ]
 
 [params]
 

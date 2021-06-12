@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex"
+path="res://.import/waiting room.png-46283924bdd0204cd28953e1033c6d2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/praca.png"
-dest_files=[ "res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex" ]
+source_file="res://assets/waiting room.png"
+dest_files=[ "res://.import/waiting room.png-46283924bdd0204cd28953e1033c6d2b.stex" ]
 
 [params]
 

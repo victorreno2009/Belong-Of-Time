@@ -15,24 +15,14 @@
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 1 ) ],
-"loop": true,
-"name": "Walk Down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "Walk Left",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "Idle Up",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 2 ) ],
 "loop": true,
-"name": "Idle Down",
+"name": "Walk Up",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
@@ -40,9 +30,19 @@ animations = [ {
 "name": "Idle Left",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "Walk Up",
+"name": "Idle Down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Walk Left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "Walk Down",
 "speed": 5.0
 } ]
 
