@@ -23,7 +23,7 @@ __meta__ = {
 }
 
 [node name="PortalBelong" type="Sprite" parent="."]
-position = Vector2( 659.552, 370.923 )
+position = Vector2( 659.552, 368.923 )
 scale = Vector2( 1.90659, 1.14353 )
 texture = ExtResource( 1 )
 
@@ -33,8 +33,13 @@ margin_top = 253.351
 margin_right = 976.134
 margin_bottom = 453.351
 custom_fonts/font = SubResource( 1 )
-text = "Victor burlou o projeto da bobina de Tesla, mas como não havia previsto, a distribuição de energia teve um alto atraso, graças a falta d eimplementação do projeto, pois estava na metade e Victor nunca conseguiu concluir, alterando para um presente com uma tecnologia incompleta e atrasada em relação ao seu antigo presente."
+text = "Com Vinicius se recusando a ajudar no projeto de Tesla, a metafísica dos efeitos no tempo acabou por criar outra realidade na qual os avanços da energia elétrica atrasaram, afetando completamente o seu presente criado.
+
+FINAL RUIM"
 autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )

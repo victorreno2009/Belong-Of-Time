@@ -33,12 +33,15 @@ anchor_left = -4.6
 anchor_top = 3.575
 anchor_right = 41.3
 anchor_bottom = 6.2
-margin_left = 468.055
-margin_top = 105.352
-margin_right = -522.945
-margin_bottom = 165.352
+margin_left = 452.055
+margin_top = -14.648
+margin_right = -538.945
+margin_bottom = 101.352
 custom_fonts/font = SubResource( 1 )
-text = "Com Victor ajudando no projeto da bobina de Tesla, o projeto se deu como concluído e Tesla revolucionou a história da energia tendo o seu nome conhecido em várias gerações.  Tesla nunca falou abertamente quem o ajudou porque nunca mais encontrou Victor, e se questiona se aquela história contada por ele era realmente verdadeira..."
+text = "Com Vinicius ajudando no projeto da bobina de Tesla, o projeto se deu como concluído e Tesla revolucionou a história da energia tendo o seu nome conhecido em várias gerações.  Tesla nunca falou abertamente quem o ajudou porque nunca mais encontrou Vinicius, e se questiona se aquela história contada por ele era realmente verdadeira...
+A história  continuou como deveria ser.
+
+FINAL BOM."
 align = 3
 autowrap = true
 __meta__ = {
