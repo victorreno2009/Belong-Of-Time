@@ -16,16 +16,6 @@ radius = 10.14
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 1 ) ],
-"loop": true,
-"name": "Walk Down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "Walk Left",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "Idle Up",
@@ -36,9 +26,19 @@ animations = [ {
 "name": "Idle Down",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "Walk Down",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "Idle Left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Walk Left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 5 ) ],

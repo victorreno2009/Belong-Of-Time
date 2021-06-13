@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/Praca.png" type="Texture" id=1]
-[ext_resource path="res://Juvenal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Victor.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Soundtracks/choco-birds-forest.ogg" type="AudioStream" id=4]
 
@@ -129,6 +129,5 @@ position = Vector2( 725.279, 216.449 )
 stream = ExtResource( 4 )
 autoplay = true
 
-[node name="Juvenal" parent="." instance=ExtResource( 2 )]
-position = Vector2( 484.062, 456.628 )
-scale = Vector2( 1.7, 1.7 )
+[node name="Victor" parent="." instance=ExtResource( 2 )]
+position = Vector2( 487.385, 458.278 )

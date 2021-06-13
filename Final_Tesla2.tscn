@@ -1,22 +1,29 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/PortalBelong.jpg" type="Texture" id=1]
 [ext_resource path="res://Arial Negrito.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Soundtracks/Full of memories.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Final_Tesla2.gd" type="Script" id=4]
+[ext_resource path="res://Soundtracks/Menu Selection Click.ogg" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 23
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 2 )
+
 [node name="Final_Tesla2" type="Control"]
 margin_right = 40.0
 margin_bottom = 40.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PortalBelong" type="Sprite" parent="."]
-position = Vector2( 658.43, 370.923 )
+position = Vector2( 659.552, 370.923 )
 scale = Vector2( 1.90659, 1.14353 )
 texture = ExtResource( 1 )
 
@@ -32,3 +39,20 @@ autowrap = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 autoplay = true
+
+[node name="Continue" type="Button" parent="."]
+margin_left = 520.573
+margin_top = 472.713
+margin_right = 749.573
+margin_bottom = 588.713
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.0901961, 0.823529, 0.870588, 1 )
+text = "Continue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="somButton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 24.0
+[connection signal="pressed" from="Continue" to="." method="_on_Continue_pressed"]
