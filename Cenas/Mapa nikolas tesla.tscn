@@ -81,7 +81,7 @@ shape = SubResource( 3 )
 
 [node name="Vinicius" parent="." instance=ExtResource( 8 )]
 position = Vector2( -997.692, -694.489 )
-scale = Vector2( 1.5, 1.5 )
+scale = Vector2( 1.7, 1.7 )
 
 [node name="Camera2D" type="Camera2D" parent="Vinicius"]
 current = true

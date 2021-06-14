@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex"
+path="res://.import/Quarto.png-56b44f8977b70f3169aa6940a095bb96.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/praca.png"
-dest_files=[ "res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex" ]
+source_file="res://assets/Quarto.png"
+dest_files=[ "res://.import/Quarto.png-56b44f8977b70f3169aa6940a095bb96.stex" ]
 
 [params]
 

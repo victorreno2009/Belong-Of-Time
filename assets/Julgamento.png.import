@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex"
+path="res://.import/Julgamento.png-d6a376302685863004f929bf5f08df68.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/praca.png"
-dest_files=[ "res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex" ]
+source_file="res://assets/Julgamento.png"
+dest_files=[ "res://.import/Julgamento.png-d6a376302685863004f929bf5f08df68.stex" ]
 
 [params]
 

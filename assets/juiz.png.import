@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex"
+path="res://.import/juiz.png-35509d5d0dfd257197a463d2b1d58a7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/praca.png"
-dest_files=[ "res://.import/praca.png-ae494d9e3557cc001b9c8bfa7205ab30.stex" ]
+source_file="res://assets/juiz.png"
+dest_files=[ "res://.import/juiz.png-35509d5d0dfd257197a463d2b1d58a7b.stex" ]
 
 [params]
 
