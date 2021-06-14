@@ -2,9 +2,19 @@ extends StaticBody2D
 
 var refjogador = null
 var Tesla = "Nikolas"
-var falas = ["???: O que desejas, caro senhor?","Vinicius: Senhor, aconteceu algo estranho, estou meio desorientado, levei uma pancada forte na cabeça e não me lembro de nada.",  "???: Bom, eu não sou nenhum doutor em medicina, então não posso saber se o que dizes é verdade ou mentira...", 
-"Vinicius: E quem é você?", "???: Me perdoe a falta de educação, me chamo Nikolas Tesla.","Vinicius: Como?", "Vinicius: O senhor é Nikolas Tesla?", "Nikolas Tesla: Sim, e estou prestes a revolucionar o mundo com minha nova invenção. Projeto chamado bobina de Tesla.", "Vinicius: Nossa, estou no ano de 1885?", "Nikolas Tesla: Por quê a surpresa, caro senhor?", "Vinicius: Está bem, eu tenho um segredo para lhe contar.", 
-"Vinicius: Eu não estou louco, acredite em mim, mas eu vim do futuro. não sei exatamente o que estou fazendo aqui, mas, agora que estou aqui, não tenho muitas opções a não ser que a história prossiga da forma como deve.", "Nikolas Tesla: Há, que loucura o que dizes. Tenho mais com o que se preocupar.", "Nikolas Tesla: Bom, você não é o único louco aqui, então irei lhe pedir uma ajuda. Você quer me ajudar a fazer minha bobina?", 
+var falas = ["???: O que desejas, caro senhor?",
+"Vinicius: Senhor, aconteceu algo estranho, estou meio desorientado, levei uma pancada forte na cabeça e não me lembro de nada.",  
+"???: Bom, eu não sou nenhum doutor em medicina, então não posso saber se o que dizes é verdade ou mentira...", 
+"Vinicius: E quem é você?", 
+"???: Me perdoe a falta de educação, me chamo Nikolas Tesla.",
+"Vinicius: Como?", 
+"Vinicius: O senhor é Nikolas Tesla?", 
+"Nikolas Tesla: Sim, e estou prestes a revolucionar o mundo com minha nova invenção. Projeto chamado bobina de Tesla.", 
+"Vinicius: Nossa, estou no ano de 1885?", "Nikolas Tesla: Por quê a surpresa, caro senhor?", 
+"Vinicius: Está bem, eu tenho um segredo para lhe contar.", 
+"Vinicius: Eu não estou louco, acredite em mim, mas eu vim do futuro. não sei exatamente o que estou fazendo aqui, mas, agora que estou aqui, não tenho muitas opções a não ser que a história prossiga da forma como deve.", 
+"Nikolas Tesla: Há, que loucura o que dizes. Tenho mais com o que se preocupar.", 
+"Nikolas Tesla: Bom, você não é o único louco aqui, então irei lhe pedir uma ajuda. Você quer me ajudar a fazer minha bobina?", 
 ]
 var escolha = 14
 var escolha1 = "Ajudar na bobina de Tesla"

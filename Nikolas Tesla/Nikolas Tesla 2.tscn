@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Nikolas Tesla/Nikolas tesla.tres" type="Texture" id=1]
+[ext_resource path="res://Nikolas Tesla/Nikolas Tesla 2.gd" type="Script" id=2]
+[ext_resource path="res://Soundtracks/Menu Selection Click.ogg" type="AudioStream" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Tesla Idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 7.84011
+height = 15.5481
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 5.14952, 1.49298 )
+
+[node name="Nikolas Tesla2" type="StaticBody2D" groups=[
+"Nikolas2",
+]]
+scale = Vector2( 2, 2 )
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Tesla Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1.06066 )
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -0.44545, 16.5793 )
+shape = SubResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -207.0
+margin_top = -43.0
+margin_right = -56.0
+margin_bottom = -29.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Som_Button" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 24.0
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

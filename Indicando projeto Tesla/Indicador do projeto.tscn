@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Indicando projeto Tesla/Projeto Tesla 2.tres" type="Texture" id=1]
+[ext_resource path="res://Indicando projeto Tesla/Projeto Tesla.tres" type="Texture" id=2]
+[ext_resource path="res://Indicando projeto Tesla/Indicador do projeto.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Brilho",
+"speed": 5.0
+} ]
+
+[sub_resource type="RayShape2D" id=1]
+length = 4.26809
+
+[node name="Indicando projeto" type="StaticBody2D"]
+script = ExtResource( 3 )
+
+[node name="Animated" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Brilho"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3.8147e-06, -11.7249 )
+shape = SubResource( 1 )

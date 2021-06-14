@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://juiz/juiz falando.tres" type="Texture" id=1]
 [ext_resource path="res://juiz/juiz martelo.tres" type="Texture" id=2]
 [ext_resource path="res://juiz/juiz parado.tres" type="Texture" id=3]
+[ext_resource path="res://juiz/juiz.gd" type="Script" id=4]
+[ext_resource path="res://Soundtracks/Menu Selection Click.ogg" type="AudioStream" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -11,21 +13,55 @@ animations = [ {
 "name": "normal",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 3 ) ],
-"loop": false,
-"name": "martelo",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "falando",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "martelo",
+"speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=3]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 25.8171, 4.97532 )
+
+[node name="Juiz" type="StaticBody2D" groups=[
+"Juizado",
+]]
+script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "martelo"
 frame = 2
 playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -3.1748, 4.7622 )
+shape = SubResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 140.051 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -23.9385
+margin_top = -66.7758
+margin_right = 16.0615
+margin_bottom = -52.7758
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Som_Button" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = 24.0
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

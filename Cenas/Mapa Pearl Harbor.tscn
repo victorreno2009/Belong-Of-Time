@@ -1,13 +1,13 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/room.png" type="Texture" id=1]
 [ext_resource path="res://assets/enfermary room.png" type="Texture" id=2]
 [ext_resource path="res://assets/waiting room.png" type="Texture" id=3]
-[ext_resource path="res://Fogo/fogo2.tres" type="Texture" id=4]
-[ext_resource path="res://Fogo/fogo1.tres" type="Texture" id=5]
-[ext_resource path="res://Fogo/fogo3.tres" type="Texture" id=6]
+[ext_resource path="res://Portal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Cenas/Final Harbor1.gd" type="Script" id=5]
+[ext_resource path="res://Cenas/Final Harbor2.gd" type="Script" id=6]
 [ext_resource path="res://Juvenal.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Fogo/fogo4.tres" type="Texture" id=8]
+[ext_resource path="res://Cap Japonês.tscn" type="PackedScene" id=8]
 
 [sub_resource type="TileSet" id=1]
 0/name = "enfermary room.png 0"
@@ -109,15 +109,13 @@
 6/shapes = [  ]
 6/z_index = 0
 
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "unico",
-"speed": 20.0
-} ]
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 19.6466, 3.51611 )
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 18.2322, 3.3429 )
+
+[node name="Mapa Pearl Harbor" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -133,171 +131,12 @@ tile_set = SubResource( 1 )
 format = 1
 tile_data = PoolIntArray( 917509, 0, 0 )
 
-[node name="Fogos" type="Node2D" parent="."]
-
-[node name="Fogo" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 48.6735, 466.617 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 2
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo2" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 65.6633, 486.439 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 1
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo3" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 48.6735, 534.576 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo4" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 494.182, 517.586 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 3
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo5" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 449.82, 495.877 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 3
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo6" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 904.767, 231.593 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 3
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo7" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 693.34, 105.113 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 2
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo8" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 374.31, 101.338 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 2
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo9" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 355.433, 282.562 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 1
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo10" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 1225.93, 344.401 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo11" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 1126.71, 726.167 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo12" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 1128.39, 272.083 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 3
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo13" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 1558.93, 694.214 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 2
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo14" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 436.971, 1009.18 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 3
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo15" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 634.031, 1074.86 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 2
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo16" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 718.788, 1358.8 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-frame = 1
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo17" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 780.237, 1337.61 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
-[node name="Fogo18" type="AnimatedSprite" parent="Fogos"]
-position = Vector2( 392.474, 1346.09 )
-scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
-animation = "unico"
-playing = true
-offset = Vector2( -6.9976, -22.4351 )
-
 [node name="Juvenal" parent="." instance=ExtResource( 7 )]
-position = Vector2( 441.196, 309.194 )
+position = Vector2( 1188.85, 312.61 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Camera2D" type="Camera2D" parent="Juvenal"]
-scale = Vector2( 1, 1 )
+position = Vector2( 1.79587, -3.23022 )
 current = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -323,3 +162,31 @@ polygon = PoolVector2Array( 255.737, 348.648, 242.523, 382.627, 189.666, 363.75,
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( 0.405029, 434.134 )
 polygon = PoolVector2Array( 255.737, 348.648, 242.523, 382.627, 189.666, 363.75, 153.798, 329.77, 138.697, 280.689, 150.023, 235.383, 200.992, 197.628, 244.41, 186.301, 253.849, 203.291, 278.39, 203.291, 287.829, 188.189, 318.033, 197.628, 353.9, 212.73, 374.665, 239.158, 387.879, 267.475, 385.992, 303.342, 370.89, 335.434, 336.91, 359.974, 297.267, 376.964, 284.053, 350.535 )
+
+[node name="Portal" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1287.77, 250.543 )
+
+[node name="Final Harbor1" type="Area2D" parent="." groups=[
+"Harbor1",
+]]
+position = Vector2( -1, 0 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Final Harbor1"]
+position = Vector2( 1288.55, 292.516 )
+shape = SubResource( 2 )
+
+[node name="Final Harbor2" type="Area2D" parent="." groups=[
+"Harbor2",
+]]
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Final Harbor2"]
+position = Vector2( 1287.77, 292.516 )
+shape = SubResource( 3 )
+
+[node name="Cap Japonês" parent="." instance=ExtResource( 8 )]
+position = Vector2( 663.566, 477.409 )
+scale = Vector2( 1.5, 1.5 )
+[connection signal="body_entered" from="Final Harbor1" to="Final Harbor1" method="_on_Final_Harbor1_body_entered"]
+[connection signal="body_entered" from="Final Harbor2" to="Final Harbor2" method="_on_Final_Harbor2_body_entered"]
