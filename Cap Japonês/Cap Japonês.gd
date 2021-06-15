@@ -2,11 +2,19 @@ extends StaticBody2D
 
 var refjogador = null
 var Cap = "Capitão"
-var falas = ["???: O que desejas, caro senhor?","Vinicius: Senhor, aconteceu algo estranho, estou meio desorientado, levei uma pancada forte na cabeça e não me lembro de nada.",  "???: Bom, eu não sou nenhum doutor em medicina, então não posso saber se o que dizes é verdade ou mentira...", 
-"Vinicius: E quem é você?", "???: Me perdoe a falta de educação, me chamo Nikolas Tesla.","Vinicius: Como?", "Vinicius: O senhor é Nikolas Tesla?", "Nikolas Tesla: Sim, e estou prestes a revolucionar o mundo com minha nova invenção. Projeto chamado bobina de Tesla.", "Vinicius: Nossa, estou no ano de 1885?", "Nikolas Tesla: Por quê a surpresa, caro senhor?", "Vinicius: Está bem, eu tenho um segredo para lhe contar.", 
-"Vinicius: Eu não estou louco, acredite em mim, mas eu vim do futuro. não sei exatamente o que estou fazendo aqui, mas, agora que estou aqui, não tenho muitas opções a não ser que a história prossiga da forma como deve.", "Nikolas Tesla: Há, que loucura o que dizes. Tenho mais com o que se preocupar.", "Nikolas Tesla: Bom, você não é o único louco aqui, então irei lhe pedir uma ajuda. Você quer me ajudar a fazer minha bobina?", 
+var falas = ["Juvenal: Ai minha cabeça, onde estou?",
+"General Japonês: Neste dia glorioso, 7 de dezembro de 1941, iremos realizar um ato importante para o império japonês.",
+"Soldados: O que seria general?",
+"General Japonês: Iremos atacar a base naval de Pearl Harbor!!!!!",
+"Juvenal: O quê? Estou no passado? Época de guerra?",
+"Juvenal: Como isso aconteceu?",
+"General Japonês: Vamos agorar colocar os aviões para decolarem!!!",
+"Soldados: Aeeeee!",
+"Juvenal: Será que se eu impedir os japoneses de alguma forma, a história tomaria um rumo melhor sem os EUA com danos severos?",
+"Juvenal: Tem um botão ali de desligar o sistema, será que devo?" 
+
 ]
-var escolha = 14
+var escolha = 10
 var escolha1 = "Intervir"
 var escolha2 = "Não fazer nada"
 var boolean = false
@@ -32,14 +40,14 @@ func _on_Area2D_body_exited(body):
 func escolha_boa():
 	som.play()
 	get_tree().call_group("Harbor2", "FinalHarbor1")
-	$Label.text = "Pois bem jovem, vá até meu armazém e traga-me a planta do projeto."
+	$Label.text = "Espere, quem é você? Soldados, prendam-no!!!"
 	yield(get_tree().create_timer(3), "timeout")
 	$Label.text = ""
 
 func escolha_ruim():
 	som.play()
 	get_tree().call_group("Harbor1", "FinalHarbor2")
-	$Label.text = "Socorro!"
+	$Label.text = "Avante soldados!!!"
 	yield(get_tree().create_timer(3), "timeout")
 	$Label.text = ""
 

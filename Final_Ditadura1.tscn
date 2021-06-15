@@ -28,14 +28,15 @@ scale = Vector2( 1.90659, 1.14353 )
 texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 358.134
-margin_top = 253.351
-margin_right = 976.134
-margin_bottom = 453.351
+margin_left = 335.481
+margin_top = 153.3
+margin_right = 953.481
+margin_bottom = 382.3
 custom_fonts/font = SubResource( 1 )
-text = "FINAL DITADURA1
+text = "Victor apenas assistindo o julgamento, não teve muito o que fazer a não ser presenciar um fato histórico injusto que ocorreu no Brasil. Voltando ao portal para seu tempo, Victor fica com aquele sentimento de culpa, como se compactuasse com o ocorrido, pelo fato de não ter impedido.
+A história ocorreu como deveria.
 
-FINAL RUIM"
+FINAL BOM?"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

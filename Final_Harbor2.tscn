@@ -28,14 +28,18 @@ scale = Vector2( 1.90659, 1.14353 )
 texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 358.134
-margin_top = 253.351
-margin_right = 976.134
-margin_bottom = 453.351
+margin_left = 352.134
+margin_top = 127.351
+margin_right = 970.134
+margin_bottom = 414.351
 custom_fonts/font = SubResource( 1 )
-text = "Com Vinicius se recusando a ajudar no projeto de Tesla, a metafísica dos efeitos no tempo acabou por criar outra realidade na qual os avanços da energia elétrica atrasaram, afetando completamente o seu presente criado.
+text = "Juvenal, apesar de saber as consequências de seus atos, deixou que os japoneses progredissem com os ataques a Pearl Harbor,  fazendo assim o rumo da história continuar normalmente como deveria ser.
 
-FINAL RUIM"
+SERÁ QUE O TEMPO SE RECUSA A MUDAR?
+
+OU SERÁ O HOMEM QUE SE RECUSA A MUDAR?
+
+FINAL BOM?"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

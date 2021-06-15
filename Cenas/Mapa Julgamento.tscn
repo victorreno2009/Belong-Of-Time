@@ -23,11 +23,11 @@ position = Vector2( 2.08112, 24.0815 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Victor" parent="." instance=ExtResource( 2 )]
-position = Vector2( -43.0895, 88.5508 )
+position = Vector2( -58.3036, 77.5054 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Camera2D" type="Camera2D" parent="Victor"]
-position = Vector2( 59.2888, -13.1154 )
+position = Vector2( -9.53674e-07, 1.52588e-05 )
 scale = Vector2( 1.42857, 1.42857 )
 current = true
 limit_left = 0
@@ -66,7 +66,7 @@ shape = SubResource( 1 )
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Final_Ditadura2"]
-position = Vector2( 0, 149.03 )
+position = Vector2( -0.441971, 76.4873 )
 shape = SubResource( 2 )
 [connection signal="body_entered" from="Final_Ditadura1" to="Final_Ditadura1" method="_on_Final_Ditadura1_body_entered"]
 [connection signal="body_entered" from="Final_Ditadura2" to="Final_Ditadura2" method="_on_Final_Ditadura2_body_entered"]

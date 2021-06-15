@@ -24,9 +24,9 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=3]
-
 [sub_resource type="RectangleShape2D" id=2]
+
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 25.8171, 4.97532 )
 
 [node name="Juiz" type="StaticBody2D" groups=[
@@ -43,19 +43,19 @@ playing = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( -3.1748, 4.7622 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0, 140.051 )
-shape = SubResource( 2 )
+position = Vector2( -101, 141.352 )
+shape = SubResource( 3 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = -23.9385
-margin_top = -66.7758
-margin_right = 16.0615
-margin_bottom = -52.7758
+margin_left = -117.583
+margin_top = -62.2809
+margin_right = -77.5827
+margin_bottom = -48.2809
 __meta__ = {
 "_edit_use_anchors_": false
 }

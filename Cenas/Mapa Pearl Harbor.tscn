@@ -173,7 +173,7 @@ position = Vector2( -1, 0 )
 script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Final Harbor1"]
-position = Vector2( 1288.55, 292.516 )
+position = Vector2( 874.55, 489.516 )
 shape = SubResource( 2 )
 
 [node name="Final Harbor2" type="Area2D" parent="." groups=[
@@ -182,11 +182,11 @@ shape = SubResource( 2 )
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Final Harbor2"]
-position = Vector2( 1287.77, 292.516 )
+position = Vector2( 1287.77, 307.765 )
 shape = SubResource( 3 )
 
 [node name="Cap Japonês" parent="." instance=ExtResource( 8 )]
-position = Vector2( 663.566, 477.409 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 629.586, 488.735 )
+scale = Vector2( 2, 2 )
 [connection signal="body_entered" from="Final Harbor1" to="Final Harbor1" method="_on_Final_Harbor1_body_entered"]
 [connection signal="body_entered" from="Final Harbor2" to="Final Harbor2" method="_on_Final_Harbor2_body_entered"]

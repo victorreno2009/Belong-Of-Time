@@ -2,13 +2,24 @@ extends StaticBody2D
 
 var refjogador = null
 var Juiz = "Juizado"
-var falas = ["???: O que desejas, caro senhor?","Vinicius: Senhor, aconteceu algo estranho, estou meio desorientado, levei uma pancada forte na cabeça e não me lembro de nada.",  "???: Bom, eu não sou nenhum doutor em medicina, então não posso saber se o que dizes é verdade ou mentira...", 
-"Vinicius: E quem é você?", "???: Me perdoe a falta de educação, me chamo Nikolas Tesla.","Vinicius: Como?", "Vinicius: O senhor é Nikolas Tesla?", "Nikolas Tesla: Sim, e estou prestes a revolucionar o mundo com minha nova invenção. Projeto chamado bobina de Tesla.", "Vinicius: Nossa, estou no ano de 1885?", "Nikolas Tesla: Por quê a surpresa, caro senhor?", "Vinicius: Está bem, eu tenho um segredo para lhe contar.", 
-"Vinicius: Eu não estou louco, acredite em mim, mas eu vim do futuro. não sei exatamente o que estou fazendo aqui, mas, agora que estou aqui, não tenho muitas opções a não ser que a história prossiga da forma como deve.", "Nikolas Tesla: Há, que loucura o que dizes. Tenho mais com o que se preocupar.", "Nikolas Tesla: Bom, você não é o único louco aqui, então irei lhe pedir uma ajuda. Você quer me ajudar a fazer minha bobina?", 
-]
+var falas = ["Victor: Espere onde estou?",
+"Juiz: Começando o caso número 264, data de 10/12/1964.",
+"Juiz: Caro réu, você está sendo julgado por crimes contra o regime militar brasileiro.",
+"Victor: Regime militar brasileiro?",
+"Victor: Sério que acordei na época da ditadura?",
+"Réu: Posso dizer, meritíssimo, nunca que iria fazer igual crime como me condena. Sou um cidadão honesto.",
+"Juiz: Será mesmo? O que seria então essa arma que encontramos em sua residência?",
+"Réu: Como? Essa arma não é minha. Nunca usei uma em minha vida toda.",
+"Juiz: Não é o que minhas informações dizem.",
+"Réu: Por favor, eu sou inocente.",
+"Juri: Hahahaha.",
+"Victor: Isto não é um julgamento justo, todos são militares apoiadores ao regime, sem ao mínimo ter um advogado para defender o réu...",
+"Victor: Preciso fazer algo...",
+] 
+
 var escolha = 14
-var escolha1 = "Defender o réu"
-var escolha2 = "Apenas assistir"
+var escolha1 = "Apenas assistir"
+var escolha2 = "Defender o réu"
 var boolean = false
 var boolean2
 var conversou_npc = false
@@ -32,13 +43,13 @@ func _on_Area2D_body_exited(body):
 func escolha_boa():
 	som.play()
 	get_tree().call_group("Ditadura2", "FinalDitadura1")
-	$Label.text = "Pois bem jovem, vá até meu armazém e traga-me a planta do projeto."
+	$Label.text = "Você está setenciado a prisão, levem-no!"
 	yield(get_tree().create_timer(3), "timeout")
 	$Label.text = ""
 
 func escolha_ruim():
 	som.play()
 	get_tree().call_group("Ditadura1", "FinalDitadura2")
-	$Label.text = "Socorro!"
+	$Label.text = ""
 	yield(get_tree().create_timer(3), "timeout")
 	$Label.text = ""
