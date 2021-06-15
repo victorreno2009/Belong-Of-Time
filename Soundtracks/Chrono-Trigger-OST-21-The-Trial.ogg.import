@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Chrono-Trigger-OST-21-The-Trial.ogg-73872a9ad2dea814feb8314f1c3fa4ec.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/Chrono-Trigger-OST-21-The-Trial.ogg"
+dest_files=[ "res://.import/Chrono-Trigger-OST-21-The-Trial.ogg-73872a9ad2dea814feb8314f1c3fa4ec.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

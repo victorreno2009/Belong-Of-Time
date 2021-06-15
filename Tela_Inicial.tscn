@@ -6,7 +6,7 @@
 [ext_resource path="res://Soundtracks/Menu_BelongOfTime.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Soundtracks/Menu Selection Click.ogg" type="AudioStream" id=5]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 61
 font_data = ExtResource( 2 )
 
@@ -14,7 +14,7 @@ font_data = ExtResource( 2 )
 size = 25
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 25
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
@@ -33,11 +33,11 @@ scale = Vector2( 3.16471, 1.64646 )
 texture = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 343.681
-margin_top = 80.8811
-margin_right = 935.681
-margin_bottom = 170.881
-custom_fonts/font = SubResource( 3 )
+margin_left = 439.956
+margin_top = 75.2179
+margin_right = 1031.96
+margin_bottom = 165.218
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.00784314, 0.00784314, 0.00392157, 1 )
 text = "Belong Of Time"
 __meta__ = {
@@ -61,7 +61,7 @@ margin_left = 570.541
 margin_top = 396.915
 margin_right = 718.541
 margin_bottom = 445.915
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.913725, 0.862745, 0.0705882, 1 )
 text = "Sair"
 __meta__ = {
@@ -70,6 +70,7 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -4.228
 autoplay = true
 
 [node name="somButton" type="AudioStreamPlayer" parent="."]

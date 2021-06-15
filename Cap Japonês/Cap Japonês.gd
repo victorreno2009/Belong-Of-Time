@@ -8,10 +8,10 @@ var falas = ["Juvenal: Ai minha cabeça, onde estou?",
 "General Japonês: Iremos atacar a base naval de Pearl Harbor!!!!!",
 "Juvenal: O quê? Estou no passado? Época de guerra?",
 "Juvenal: Como isso aconteceu?",
-"General Japonês: Vamos agorar colocar os aviões para decolarem!!!",
+"General Japonês: Vamos agora colocar os aviões para decolarem!!!",
 "Soldados: Aeeeee!",
 "Juvenal: Será que se eu impedir os japoneses de alguma forma, a história tomaria um rumo melhor sem os EUA com danos severos?",
-"Juvenal: Tem um botão ali de desligar o sistema, será que devo?" 
+"Juvenal: Tem um botão ali de desligar o sistema do navio, será que devo?" 
 
 ]
 var escolha = 10

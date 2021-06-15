@@ -23,7 +23,7 @@ __meta__ = {
 }
 
 [node name="PortalBelong" type="Sprite" parent="."]
-position = Vector2( 733.195, 519.967 )
+position = Vector2( 730.817, 519.967 )
 scale = Vector2( 2.05912, 1.08378 )
 texture = ExtResource( 1 )
 offset = Vector2( -10.2756, -152.779 )
@@ -43,7 +43,10 @@ dias atuais, tanto no espectro político, tecnológico e cultural da sociedade c
 acidente no local de reunião deles é criado um portal onde cada um deles é teletransportado para um evento
 histórico diferente, e com isso, cada um deles pode ter a chance de transformar o rumo da história da
 humanidade com o poder da decisão sabendo de uma das suas consequências, será este o melhor caminho a
-se seguir?"
+se seguir?
+Teclas de comando: Andar: Seta de cima/baixo, seta da esquerda/direita.
+Interagir: Tecla Z.
+Escolher uma opção: Mouse click.."
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -62,6 +65,7 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -11.838
 autoplay = true
 
 [node name="somButton" type="AudioStreamPlayer" parent="."]

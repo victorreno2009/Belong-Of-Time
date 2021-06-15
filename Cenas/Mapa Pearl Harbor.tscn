@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/room.png" type="Texture" id=1]
 [ext_resource path="res://assets/enfermary room.png" type="Texture" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Cenas/Final Harbor2.gd" type="Script" id=6]
 [ext_resource path="res://Juvenal.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Cap Japonês.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Soundtracks/RPG_-_To_Arms_Battle_Music_1.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Soldado japones/Soldado japones.tres" type="Texture" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "enfermary room.png 0"
@@ -188,5 +190,20 @@ shape = SubResource( 3 )
 [node name="Cap Japonês" parent="." instance=ExtResource( 8 )]
 position = Vector2( 629.586, 488.735 )
 scale = Vector2( 2, 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -9.301
+autoplay = true
+
+[node name="Soldado japones" type="Sprite" parent="."]
+position = Vector2( 730.311, 458.163 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+
+[node name="Soldado japones2" type="Sprite" parent="."]
+position = Vector2( 731.37, 547.589 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
 [connection signal="body_entered" from="Final Harbor1" to="Final Harbor1" method="_on_Final_Harbor1_body_entered"]
 [connection signal="body_entered" from="Final Harbor2" to="Final Harbor2" method="_on_Final_Harbor2_body_entered"]

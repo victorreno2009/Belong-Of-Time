@@ -109,11 +109,11 @@
 6/shapes = [  ]
 6/z_index = 0
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 61
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 25
 font_data = ExtResource( 6 )
 
@@ -137,10 +137,7 @@ polygon = PoolVector2Array( 437.105, 357.153, 501.289, 403.402, 560.753, 361.872
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
-autoplay = true
-
-[node name="somButton" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
+volume_db = -4.228
 autoplay = true
 
 [node name="Vinicius" parent="." instance=ExtResource( 5 )]
@@ -167,7 +164,7 @@ margin_left = 96.3259
 margin_top = 73.7458
 margin_right = 1333.33
 margin_bottom = 214.746
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Em um dia comum, quando alguns amigos
 conversavam na praça sobre história,
@@ -182,11 +179,15 @@ margin_left = 603.839
 margin_top = 438.874
 margin_right = 751.839
 margin_bottom = 489.874
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.854902, 0.823529, 0.0588235, 1 )
 text = "Continuar"
 __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
+
+[node name="somButton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = 24.0
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

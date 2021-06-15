@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tempo-perdido-letras.ogg-e8230c7cf5b1d7057f816ad75cbe4bac.oggstr"
+
+[deps]
+
+source_file="res://Soundtracks/tempo-perdido-letras.ogg"
+dest_files=[ "res://.import/tempo-perdido-letras.ogg-e8230c7cf5b1d7057f816ad75cbe4bac.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

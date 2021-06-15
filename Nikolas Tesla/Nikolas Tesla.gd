@@ -10,9 +10,10 @@ var falas = ["???: O que desejas, caro senhor?",
 "Vinicius: Como?", 
 "Vinicius: O senhor é Nikolas Tesla?", 
 "Nikolas Tesla: Sim, e estou prestes a revolucionar o mundo com minha nova invenção. Projeto chamado bobina de Tesla.", 
-"Vinicius: Nossa, estou no ano de 1885?", "Nikolas Tesla: Por quê a surpresa, caro senhor?", 
+"Vinicius: Nossa, estou no ano de 1889?", 
+"Nikolas Tesla: Por quê a surpresa, caro senhor?", 
 "Vinicius: Está bem, eu tenho um segredo para lhe contar.", 
-"Vinicius: Eu não estou louco, acredite em mim, mas eu vim do futuro. não sei exatamente o que estou fazendo aqui, mas, agora que estou aqui, não tenho muitas opções a não ser que a história prossiga da forma como deve.", 
+"Vinicius: Eu não estou louco, acredite em mim, mas eu vim do futuro, não sei exatamente o que estou fazendo aqui, mas, agora que estou aqui, não tenho muitas opções a não ser que a história prossiga da forma como deve.", 
 "Nikolas Tesla: Há, que loucura o que dizes. Tenho mais com o que se preocupar.", 
 "Nikolas Tesla: Bom, você não é o único louco aqui, então irei lhe pedir uma ajuda. Você quer me ajudar a fazer minha bobina?", 
 ]
@@ -49,7 +50,7 @@ func escolha_boa():
 func escolha_ruim():
 	som.play()
 	get_tree().call_group("Tesla1", "Final2")
-	$Label.text = "Socorro!"
+	$Label.text = "Bom, você que sabe..."
 	yield(get_tree().create_timer(3), "timeout")
 	$Label.text = ""
 

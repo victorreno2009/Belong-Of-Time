@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Praca.png-679aa8d46617f775fd11d7e15861d33e.stex"
+path="res://.import/Homem_Vila-removebg-preview.png-a7c620d1b9d2c2f67dd1022dbf620a0e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Praca.png"
-dest_files=[ "res://.import/Praca.png-679aa8d46617f775fd11d7e15861d33e.stex" ]
+source_file="res://assets/Homem_Vila-removebg-preview.png"
+dest_files=[ "res://.import/Homem_Vila-removebg-preview.png-a7c620d1b9d2c2f67dd1022dbf620a0e.stex" ]
 
 [params]
 
